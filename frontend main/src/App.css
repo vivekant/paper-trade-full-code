@@ -1,0 +1,46 @@
+
+:root{
+  --bgcolor:rgb(213, 65, 65);
+  --color:black;
+
+}
+
+
+[data-theme="dark"]{
+  --bgcolor:rgba(3, 3, 3, 0.782);
+  --color:white;
+}
+
+
+
+
+
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color:var(--bgcolor);
+  transition: background 1s, color 0.3s;
+  background-color: var(--bgcolor);
+  /* background-color: rgb(216, 193, 193); */
+  /* background-image: url('https://repost.aws/static/images/pattern%20header%201x.png'), linear-gradient(180deg, #cdf7f9, #defafbe0 65%, #defafb00); */
+  /* background-image: url('assets/1.jpeg'); */
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(1px);
+  
+
+
+  
+
+  
+}
+
+.signinpage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  
+}
+

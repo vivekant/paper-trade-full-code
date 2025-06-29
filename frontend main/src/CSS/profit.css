@@ -1,0 +1,91 @@
+.profit0{
+    color: green;
+    font-size: 30px;
+    width:100vw;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    display: flex;
+    /* border: 2px solid blue; */
+}
+.pfprofit2{
+    font-size: 35px;
+    
+}
+.pfprofit3{
+    font-size: 15px;
+    text-decoration: underline;
+
+}
+.pfprofit4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pfsummary{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 70px;
+    padding: 5px;
+    margin:10px auto;
+    border: 1px dashed yellow;
+    background-color: rgba(97, 120, 135,0.4);
+    
+}
+.pfsummary1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    margin: auto;
+    width: 100%;
+    height: max-content;
+    font-size: 15px;
+
+  
+
+}
+/* .hentity0{
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+ 
+} */
+
+
+.pfred1{
+    color: red;
+}
+.pfgreen1{
+ color: green;
+}
+.pfgray1{
+   color: gray;
+}
+.hdetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+    margin-top: 10px;
+
+
+    
+    
+
+    
+    
+}
+.hdetails1{
+    background-color: rgb(93, 177, 171);
+    height: 100%;
+    width: 60%;
+    border-radius: 10px;
+}
+

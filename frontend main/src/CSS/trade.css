@@ -1,0 +1,211 @@
+
+
+
+
+:root{
+  --bgcolor:white;
+  --color:black;
+  --serchbackground: rgb(158 175 198);
+  --serchinputcolor:rgb(0, 0, 0);
+  
+}
+[data-theme="dark"]{
+  --bgcolor:rgba(3, 3, 3, 0.782);
+  --color:white;
+  --serchbackground:black;
+  --serchinputcolor:white;
+}
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.main0{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+input{
+    border: none;
+    /* background-color: rgb(128, 124, 124); */
+    /* background-color: rgb(186, 183, 183); */
+    background-color: var(--serchbackground);
+    height: 20px;
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    width: 80%;
+    transition: 1s;
+    color: var(--serchinputcolor);
+}
+input::placeholder{
+    font-size: 14px;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+.trade0{
+    width: 51vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto ;
+    gap: 20px;
+    padding: 5px 0px;
+    border-radius: 20px;
+    margin-top: 5px;
+    transition: 1s;
+  
+    
+    /* background-color: rgb(186, 183, 183); */
+    background-color: var(--serchbackground);
+    
+}
+
+
+
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+
+
+
+
+
+.trade1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.watchlist0{
+    list-style: none;
+    display: flex;
+   
+    
+    margin: 10px auto;
+    width: 50vw;
+    font-family: "Roboto", sans-serif;
+
+    font-style: normal;
+    justify-content: space-around;
+    align-items: center;
+   transition: all 1s;
+   /* border: 2px solid lightseagreen; */
+   padding: 0px;
+
+
+}
+.watchlist0 li{
+    cursor: pointer;
+    /* border: 3px solid blue; */
+
+    
+}
+
+
+
+
+.gray{
+    text-decoration: none;
+    /* color: rgb(180, 179, 179); */
+    color: var(--color);
+  
+    
+    
+}
+.black{
+    text-decoration:none;
+  
+    font-size: 1.2rem;
+   
+}
+.navlink0{
+    position: relative;
+   
+   
+}
+.search1 img{
+  color: blue;
+  fill: blue;
+}
+.search0{
+    flex-grow: 1;
+    /* border: 2px solid pink; */
+    height: 100px;
+}
+
+.button2 {
+    position: relative;
+    text-decoration: none;
+    padding: 5px 0;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Active link (selected option) */
+  .button1 {
+    color: blue; /* Change active text color */
+    font-weight: bold;
+  }
+  
+  /* Underline effect */
+  .button1::after {
+    content: "";
+    position: absolute;
+    left: 50%; /* Start from the center */
+    bottom: 0px; /* Adjust spacing below text */
+    width: 0; /* Start with 0% width */
+    height: 2px;
+    background-color: blue; /* Underline color */
+    transform: translateX(-50%); /* Center the underline */
+    animation-name: expandUnderline;
+    animation-timing-function: linear;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+  
+  
+  
+   
+  }
+  
+  
+  /* Animation to expand the underline from center to full width */
+  @keyframes expandUnderline {
+    0% {
+      width: 0%; /* Start with 0% width */
+      left: 50%; /* Keep centered */
+    }
+    50% {
+      width: 50%; /* Expand to 50% width (evenly on both sides) */
+      left: 50%; /* Keep it centered */
+    }
+    100% {
+      width: 100%; /* Full width (expand symmetrically) */
+      left: 50%; /* Keep centered */
+    }
+  }
+
+ 
+
+  .search1{
+    transition: 1s;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+  }
+  .trade0{
+    position: relative;
+  }

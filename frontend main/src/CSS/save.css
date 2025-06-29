@@ -1,0 +1,25 @@
+.entity0{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    /* min-width: max-content; */
+    width: 50vw;
+    border: 1px solid gray;
+   
+    /* cursor: pointer; */
+    padding: 5px 5px;
+    min-height: 50px;
+    font-family: "Roboto", sans-serif;
+
+    font-style: normal;
+    
+    
+}
+.entity0.last{
+    border-bottom: 1px solid gray;
+}
+.entity0:hover{
+    background-color: gray;    
+    
+}

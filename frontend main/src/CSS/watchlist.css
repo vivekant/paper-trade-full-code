@@ -1,0 +1,72 @@
+
+body{
+  padding: 0;
+  margin: 0;
+  /* background-color: rgb(203, 218, 214); */
+  
+ 
+}
+
+
+.trade-watchlist{
+    /* border: 2px solid pink; */
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    /* position: relative; */
+    /* justify-content: space-between; */
+    /* border: 2px solid blue; */
+    position: relative;
+}
+.trade-watchlist1{
+    /* border: 2px solid blue; */
+    /* display: flex;
+    flex-direction: column; */
+    flex-grow: 1;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid blue; */
+    /* width: 100vw; */
+
+    
+    
+   
+
+
+   
+}
+
+
+.trade-watchlist1::-webkit-scrollbar-thumb{
+ 
+  background-color: rgb(46, 188, 46);
+  border-radius: 10px;
+
+}
+.trade-watchlist1::-webkit-scrollbar-button{
+
+  display: none;
+
+}
+.trade-watchlist1::-webkit-scrollbar{
+  width: 5px;
+
+
+}
+.trade1{
+  display: flex;
+  flex-direction: column-reverse;
+ 
+}
+.rposition{
+  /* background-color: blue;
+   */
+   /* padding: 0px; */
+   margin: 0px 0px 0px -10px;
+  
+}

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jaro:opsz@6..72&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+:root{
+  --bgcolor:white;
+  --color:black;
+
+}
+[data-theme="dark"]{
+  --bgcolor:rgba(3, 3, 3, 0.782);
+  --color:white;
+}
+
+
+.line {
+  height: 1px;
+  width: 100vw;
+  background-color: rgb(111, 111, 127);
+  margin-top: 10px;
+}
+
+.profile {
+  padding-top: 5px;
+
+
+}
+.trade000{
+  display: none;
+}
+
+
+.profile1 {
+
+  background-color: rgb(231, 231, 235);
+ 
+  width: 90px;
+  padding: 5px 0px;
+  text-align: center;
+  border-radius: 10px;
+
+
+}
+
+.profile-content {
+  font-size: 15px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  list-style: none;
+  text-align: center;
+  /* gap: 6px; */
+  height: 100px;
+  width: 90px;
+  margin-left: 2px;
+  margin-top: 3px;
+  padding: 0;
+  border: 1px solid rgb(108, 156, 177);
+  /* border: 3px solid blue; */
+  /* display: none; */
+  /* margin-top: 10px; */
+
+  display: none;
+
+
+}
+
+
+.profile-content li {
+
+  /* padding: 5px; */
+
+  margin: 5px auto;
+  padding: 5px 8px;
+  /* border: 2px solid pink; */
+  text-align: center;
+
+
+
+}
+
+.profile:hover .profile-content{
+  display: block;
+}
+
+.profile-content li:hover {
+  background-color: rgb(210, 209, 209);
+}
+
+.profile:hover .profile-content {
+  display: block;
+}
+.profile-content:hover {
+  display: block;
+}
+
+
+
+
+
+
+/* Expand underline when active */
+
+
+
+
+
+
+.profile:hover .profile1 {
+  background-color: rgb(104, 202, 155);
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo1{
+  
+  /* background-color: transparent;
+  mask-image: url('../assets/mask.png');
+  mask-size: cover;
+  -webkit-mask-image: url('../assets/mask.png');
+  -webkit-mask-size: cover; */
+  width: 50px;
+ height: auto;
+ margin-right: -5px;
+}
+.logo{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+
+
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  
+  
+
+
+ 
+
+
+  
+}
+
+
+
+.nodecoration{
+  text-decoration: none;
+  color: black;
+  color: var(--color);
+}
+
+
+.button2 {
+  position: relative;
+  text-decoration: none;
+  padding: 5px 0;
+  color: black;
+ 
+  color: var(--color);
+  
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Active link (selected option) */
+.button1 {
+  color: blue; /* Change active text color */
+  color: rgb(7, 233, 67); 
+  /* Change active text color */
+  font-weight: bold;
+}
+
+/* Underline effect */
+.button1::after {
+  content: "";
+  position: absolute;
+  left: 50%; /* Start from the center */
+  bottom: 0px; /* Adjust spacing below text */
+  width: 0; /* Start with 0% width */
+  height: 2px;
+  background-color: blue; /* Underline color */
+  background-color: rgb(47, 230, 14); /* Underline color */
+  transform: translateX(-50%); /* Center the underline */
+  animation-name: expandUnderline;
+  animation-timing-function: linear;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  border-radius: 10px;
+
+
+
+ 
+}
+
+
+/* Animation to expand the underline from center to full width */
+@keyframes expandUnderline {
+  0% {
+    width: 0%; /* Start with 0% width */
+    left: 50%; /* Keep centered */
+  }
+  50% {
+    width: 50%; /* Expand to 50% width (evenly on both sides) */
+    left: 50%; /* Keep it centered */
+  }
+  100% {
+    width: 100%; /* Full width (expand symmetrically) */
+    left: 50%; /* Keep centered */
+  }
+}
+
+
+
+
+.darkmode img{
+ width: 40px;
+ /* margin-bottom: 5px; */
+ cursor: pointer;
+ rotate: 180deg;
+
+}
+.navbar0{
+/* border: 2px solid blue; */
+justify-content: space-between;
+}
+.navbar121{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid blue; */
+ 
+ 
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+
+
+  
+  
+  
+}
+.navbar1{
+  margin-right: 10px;
+
+
+}

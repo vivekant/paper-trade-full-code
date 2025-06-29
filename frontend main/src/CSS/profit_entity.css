@@ -1,0 +1,252 @@
+:root{
+    --bgcolor:white;
+    --color:black;
+    --qcolor:black;
+    
+  
+  }
+  [data-theme="dark"]{
+    --bgcolor:rgba(3, 3, 3, 0.782);
+    --color:white;
+    --qcolor:gray;
+  }
+
+
+.pfmain0{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+    margin: auto;
+    border: 1px solid black;
+    height: 40px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+   border-bottom: 0px;
+   
+
+
+
+}
+.pfmain0:last-child{
+    border-bottom: 1px solid black;
+}
+.pfelement1{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    height: 100%;
+    /* align-items: center; */
+    justify-content: space-around;
+    
+}
+.pfname{
+    color: var(--color);
+    
+    font-size: 18px;
+    font-weight: bold;
+    transition: 2s;
+    
+}
+.pfqty{
+    color: var(--qcolor);
+    font-weight: bold;
+    transition: 2s;
+}
+
+
+  
+.pfmain0:hover {
+background-color: rgba(179, 171, 171,0.5);
+}
+
+.pfsup{
+    font-size: 11px;
+    background-color: rgb(135, 148, 145);
+    border-radius: 2px;
+    padding: 1px 2px;
+}
+
+
+.pfred{
+    color: red;
+}
+.pfgreen{
+    color: green;
+}
+.pfgray{
+    color: gray;
+}
+.bold{
+    font-weight: bold;
+}
+
+
+
+
+.none{
+display: none;
+}
+.pfprofit{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.pfelement2{
+    align-items: center;
+}
+.hdetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 82vh;
+    /* margin-top: 10px; */
+   left: 0;
+   bottom: 1px;
+   cursor: default;
+   /* border: 2px solid blue; */
+   
+
+
+    /* border: 2px solid blue; */
+    
+
+    
+    
+}
+.hdetails1{
+    background-color: rgb(60, 66, 66);
+    height: 100%;
+    width: 60%;
+    border-radius: 10px;
+    /* margin: 100px 20px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+   
+}
+.hdetails2{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+    /* border: 2px solid blue; */
+
+}
+.hdetails2:hover {
+    color: white;
+}
+.hdetails3{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.new{
+    font-size: 12px;
+}
+.cancel1{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+   
+    
+}
+.cancel1 img{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animationbackground{
+    from{
+        background-color: rgb(83, 83, 135,0.1);
+    }
+    to{
+        background-color: rgb(83, 83, 135,1);
+    }
+}
+
+
+
+.pfmain0:hover{
+    background-color: rgb(83, 83, 135);
+    color: white;
+    animation: animationbackground  0.2s linear 1 forwards;
+    animation: borderAnimation  1s linear 1 forwards;
+    border: 2px solid rgb(102, 102, 191);
+    border-color: var(--final-border-color);
+    
+    .pfname{
+        color: white;
+       
+    }
+    
+   
+}
+.hdetails1{
+   margin-bottom: 5px;
+}
+.hdetails1:hover{
+    animation: borderAnimation  1s linear 1 forwards;
+   
+}
+
+:root {
+    --initial-border-color: rgb(181, 211, 72); /* Initial color */
+    --final-border-color: rgb(87, 211, 233); /* Final color after animation */
+  }
+@keyframes borderAnimation {
+    0% {
+      border-top: 0 solid transparent;
+      border-right: 0 solid transparent;
+      border-bottom: 0 solid transparent;
+      border-left: 0 solid transparent;
+    }
+    25% {
+      border-top: 2px solid var(--initial-border-color); /* Initial color */
+      border-right: 0 solid transparent;
+      border-bottom: 0 solid transparent;
+      border-left: 0 solid transparent;
+    }
+    50% {
+      border-top: 2px solid var(--initial-border-color);
+      border-right: 2px solid var(--initial-border-color);
+      border-bottom: 0 solid transparent;
+      border-left: 2px solid var(--initial-border-color);
+    }
+    75% {
+      border-top: 2px solid var(--initial-border-color);
+      border-right: 2px solid var(--initial-border-color);
+      border-bottom: 2px solid var(--initial-border-color);
+      border-left: 2px solid var(--initial-border-color);
+    }
+    100% {
+      border-top: 2px solid var(--final-border-color);
+      border-right: 2px solid var(--final-border-color);
+      border-bottom: 2px solid var(--final-border-color);
+      border-left: 2px solid var(--final-border-color);
+    }
+  }
